@@ -32,7 +32,3 @@ class Database(object):
     def check_table(self):
         self.cursor.execute("""CREATE TABLE IF NOT EXISTS projects (guild_id INTEGER, project_name TEXT,
                                     collaborators INTEGER, project_url TEXT)""")
-
-
-with Database() as f:
-    f.check_table()
