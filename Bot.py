@@ -30,8 +30,3 @@ class Collabot(commands.Bot):
 
         if message.content.startswith(self.prefix):
             await self.send_message(channel, "TODO: handle command")
-
-
-
-
-
