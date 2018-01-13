@@ -1,6 +1,7 @@
 from discord.ext import commands
 import discord
 from DBHandler import Database
+from Utils.GitEmbed import GitEmbed
 
 description = """
 Collabot - Collaboration management suited for discord

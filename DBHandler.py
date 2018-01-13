@@ -1,8 +1,8 @@
 import sqlite3
 from os import path, mkdir
 
-# Projects table: guild_id | project name | collaborators_ids | project_url | guild_id | likes/dislikes id##
-DATABASE_DIR = path.join(path.dirname(__file__), 'database')
+# Projects table: project name | owner id | collaborators_ids | project_url | guild_id | likes/dislikes id##
+DATABASE_DIR = path.join(path.dirname(__file__), 'Database')
 
 
 class Database(object):
@@ -31,4 +31,4 @@ class Database(object):
 
     def check_table(self):
         self.cursor.execute("""CREATE TABLE IF NOT EXISTS projects (guild_id INTEGER, project_name TEXT,
-                                    collaborators INTEGER, project_url TEXT)""")
+                                    owner_id INTEGER, collaborators TEXT, project_url TEXT)""")

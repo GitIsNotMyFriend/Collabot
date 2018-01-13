@@ -6,7 +6,7 @@ client = Collabot('^')
 
 @client.event
 async def on_ready():
-    print(f"Running {client.user} (ID: {client.user.id})")
+    print("Running {client.user} (ID: {client.user.id})")
 
 TOKEN_PATH = 'token'
 
